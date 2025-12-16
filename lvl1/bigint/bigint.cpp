@@ -19,7 +19,6 @@ bigint::bigint(const bigint &other) : _string(other._string) {}
 bigint::~bigint() {}
 
 void bigint::remove_leading_zeros() {
-	std::cout << "!!!!!!!!!!!!HHHHHHHHHHHHHIIIIIIIIIII!!!!!!!!!!" << std::endl;
 	size_t start = _string.find_first_not_of('0');
 	if (start == std::string::npos)
 		_string = "0";
